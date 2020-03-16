@@ -13,17 +13,55 @@
     }
 
     .btn btn-primary {
-        position: ;
+        width: 300px;
+        margin: 50px auto o auto;
     }
+
     .form-control {
         width: 300px;
         margin: 0 500px o auto;
     }
-    .custom-select{
+
+    .custom-select {
         width: 300px;
         margin: 0 500px o auto;
     }
 </style>
+<script>
+
+    function hey() {
+        if ($('#form-control id').val() == "") {
+
+        }
+        alert('이름을 입력해주세요');
+        $('#form-control id').focus();
+        return false;
+
+        if ($('#inputGroupSelect01').val() == "") {
+
+        }
+        alert('수량을 입력해주세요');
+        $('#inputGroupSelect01').focus();
+        return false;
+
+        if ($('#form-control id2').val() == "") {
+
+        }
+        alert('주소를 입력해주세요');
+        $('#form-control id2').focus();
+        return false;
+
+        if ($('#form-control id3').val() == "") {
+
+        }
+        alert('전화번호를 입력해주세요');
+        $('#form-control id3').focus();
+        return false;
+    }
+
+
+
+</script>
 
 <body>
 
@@ -40,12 +78,13 @@
     <div class="input-group flex-nowrap">
         <div class="input-group-prepend">
             <span class="input-group-text" id="addon-wrapping">주문자이름</span>
-            <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+            <input type="text" class="form-control" id="form-control id" aria-label="Username"
+                aria-describedby="addon-wrapping">
         </div>
         <p>
-    <div class="input-group mb-3">
+            <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01">수량  </label>
+                    <label class="input-group-text" for="inputGroupSelect01">수량 </label>
                     <select class="custom-select" id="inputGroupSelect01">
                         <option selected> --수량을 선택하세요-- </option>
                         <option value="1">One</option>
@@ -54,23 +93,25 @@
                     </select>
                 </div>
                 <p>
-    <div class="input-group flex-nowrap">
+                    <div class="input-group flex-nowrap">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="addon-wrapping">주소   </span>
+                            <span class="input-group-text" id="addon-wrapping">주소 </span>
 
-                            <input type="text" class="form-control" aria-label="Username"
+                            <input type="text" class="form-control" id="form-control id2" aria-label="Username"
                                 aria-describedby="addon-wrapping">
                         </div>
                         <p>
-    <div class="input-group flex-nowrap">
+                            <div class="input-group flex-nowrap">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="addon-wrapping">전화번호    </span>
+                                    <span class="input-group-text" id="addon-wrapping">전화번호 </span>
 
-                                    <input type="text" class="form-control" aria-label="Username"
+                                    <input type="text" class="form-control" id= "form-control3" aria-label="Username"
                                         aria-describedby="addon-wrapping">
                                 </div>
                                 <p>
 
-        <a href="#" class="btn btn-primary">주문하기</a>
-    </div>
+
+                                    <button onclick="hey()" type="button" id="btn btn-primary"
+                                        class="btn btn-primary">주문하기</button>
+                            </div>
 </body>
