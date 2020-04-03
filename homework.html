@@ -1,72 +1,78 @@
-<style>
-    .card {
+<!doctype html>
+<html lang="en">
 
-        width: 500px;
-        margin: 50px auto 0 auto;
+<head>
 
+    <style>
+        .card {
 
-    }
-
-    .input-group-prepend {
-        width: 500px;
-        margin: 0 auto 0 auto;
-    }
-
-    .btn btn-primary {
-        width: 300px;
-        margin: 50px auto o auto;
-    }
-
-    .form-control {
-        width: 300px;
-        margin: 0 500px o auto;
-    }
-
-    .custom-select {
-        width: 300px;
-        margin: 0 500px o auto;
-    }
-</style>
-<script>
-
-    function hey() {
-        if ($('#form-control id').val() == "") {
-            alert('이름을 입력해주세요');
-
-        } else {
-            $('#inputGroupSelect01').focus();
-        }
-    
-
-
-        if ($('#inputGroupSelect01').val() == "") {
-            alert('수량을 입력해주세요');
-
-        } else {
-            $('#form-control-id2').focus();
-
-        }
-
-        if ($('#form-control-id2').val() == "") {
-            alert('주소를 입력해주세요');
-
-        } else {
-            $('#form-control-id3').focus();
+            width: 500px;
+            margin: 50px auto 0 auto;
 
 
         }
 
-        if ($('#form-control id3').val() == "") {
-            alert('전화번호를 입력해주세요');
+        .input-group-prepend {
+            width: 500px;
+            margin: 0 auto 0 auto;
+        }
+
+        .btn btn-primary {
+            width: 300px;
+            margin: 50px auto o auto;
+        }
+
+        .form-control {
+            width: 300px;
+            margin: 0 500px o auto;
+        }
+
+        .custom-select {
+            width: 300px;
+            margin: 0 500px o auto;
+        }
+    </style>
+    <script>
+
+        function hey() {
+            if ($('#form-control id').val() == "") {
+                alert('이름을 입력해주세요');
+
+            } else {
+                $('#inputGroupSelect01').focus();
+            }
+
+
+
+            if ($('#inputGroupSelect01').val() == "") {
+                alert('수량을 입력해주세요');
+
+            } else {
+                $('#form-control-id2').focus();
+
+            }
+
+            if ($('#form-control-id2').val() == "") {
+                alert('주소를 입력해주세요');
+
+            } else {
+                $('#form-control-id3').focus();
+
+
+            }
+
+            if ($('#form-control id3').val() == "") {
+                alert('전화번호를 입력해주세요');
+
+            }
 
         }
 
-    }
 
 
 
-
-</script>
+    </script>
+</head>
 
 <body>
 
@@ -125,3 +131,5 @@
         <button onclick="hey()" type="button" id="btn btn-primary" class="btn btn-primary">주문하기</button>
     </div>
 </body>
+
+</html>
